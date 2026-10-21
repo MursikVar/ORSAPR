@@ -427,3 +427,36 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# ---------------------------------------------------------------
+# Additions for the "Pipe flange plugin" project (C# / .NET Framework 4.7.2 + Autodesk Inventor 2025)
+# ---------------------------------------------------------------
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Environment files / local secrets (*.env above does not cover .env.local etc.)
+.env.*
+!.env.example
+
+# Autodesk Inventor: backups of previous versions, lock and temp files
+OldVersions/
+*.lck
+
+# Code coverage reports (unit tests)
+[Cc]overage/
+[Cc]overage[Rr]eport/
+*.lcov
+
+# Merge / editor leftovers
+*.orig
+*.rej
+*.bak
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
